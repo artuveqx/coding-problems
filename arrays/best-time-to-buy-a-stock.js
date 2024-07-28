@@ -40,6 +40,7 @@ const runCases = function () {
         }
     }
 
+    console.log("Passed")
     return true
 }
 
