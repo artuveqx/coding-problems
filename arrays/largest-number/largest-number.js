@@ -20,21 +20,4 @@ const largestNumber = (nums) => {
     return strNums.join('')
 }
 
-const runTests = function () {
-    const testCases = [
-        { nums: [10, 2], expected: '210' },
-        { nums: [3, 30, 34, 5, 9], expected: '9534330' },
-    ]
-
-    for (let i = 0; i < testCases.length; i++) {
-        const result = largestNumber(testCases[i].nums)
-        if (result !== testCases[i].expected) {
-            throw new Error(`Case ${i + 1} was not passed: expected ${testCases[i].expected}, got ${result}`)
-        }
-    }
-
-    console.log('All test are passed!')
-    return true
-}
-
-runTests()
+module.exports = largestNumber
